@@ -4,78 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cat Image Generator</title>
-    <style>
-        body {
-            margin: 0px;
-            height: 100vh;
-            background-color: #d8e2dc;
-            color: #222222;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-family: "Inter", serif;
-        }
+   <style>
+    body {
+        margin: 0;
+        height: 100vh;
+        background-color: #FFEDD5; /* Soft peachy background */
+        color: #222222;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Inter", serif;
+    }
 
-        #title {
-            font-family: "Inter", serif;
-            font-weight: 1000;
-            margin-bottom: 30px;
-            line-height: 30px;
-        }
+    #title {
+        font-family: "Inter", serif;
+        font-weight: 1000;
+        margin-bottom: 30px;
+        line-height: 30px;
+        color: #F07B33; /* Warm orange color for the title */
+    }
 
-        #green-text {
-            display: block;
-            color: #222222;
-            margin: 0px;
-        }
+    #green-text {
+        display: block;
+        color: #F07B33; /* Warm orange color for the highlighted part */
+        margin: 0px;
+    }
 
-        #description {
-            margin-top: 1px;
-            margin-bottom: 35px;
-            color: #222222;
-        }
+    #description {
+        margin-top: 1px;
+        margin-bottom: 35px;
+        color: #333333;
+        font-size: 16px;
+    }
 
-        #container1 {
-            background-color: #ffcad4;
-            padding: 100px 50px;
-            width: 500px;
-            margin: 10px;
-        }
+    #container1 {
+        background-color: #F6A756; /* Light orange background */
+        padding: 40px 50px;
+        width: 500px;
+        margin: 10px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
 
-        #btn1, #btn2, #btn3, #btn4 {
-            background-color: #f4acb7;
-            color: #222222;
-            width: 130px;
-            margin-bottom: 10px;
-            padding: 7px 7px;
-            border: none;
-            border-radius: 5px;
-            font-family: "Inter", serif;
-            cursor: pointer;
-        }
+    #btn1, #btn2, #btn3, #btn4 {
+        background-color: #F07B33; /* Orange background for buttons */
+        color: white;
+        width: 130px;
+        margin-bottom: 10px;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        font-family: "Inter", serif;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
 
-        #btn1:hover, #btn2:hover, #btn3:hover, #btn4:hover {
-            background-color: #f4939a;
-        }
+    #btn1:hover, #btn2:hover, #btn3:hover, #btn4:hover {
+        background-color: #F46A3F; /* Slightly darker orange for hover effect */
+    }
 
-        #text-container {
-            display: flex;
-            flex-direction: column;
-        }
+    #text-container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
 
-        hr {
-            color: #222222;
-        }
+    hr {
+        border: 1px solid #F07B33; /* Orange colored horizontal line */
+    }
 
-        .meme-display {
-            margin-top: 20px;
-        }
+    .meme-display {
+        margin-top: 20px;
+        text-align: center;
+    }
 
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-    </style>
+    img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+</style>
+
 </head>
 <body>
 
